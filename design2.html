@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title> Rolling Vibes 🚴🏻 </title>
+  <meta charset="utf-8">
+  <style>
+    /* 공통 타이포 */
+    html { font-size: 18px; }
+    h1 { font-size: 2.2rem; margin: 22px 0 10px; text-align:center; letter-spacing:-0.5px; }
+    h2 { text-align:center; margin-top:18px; margin-bottom:10px; }
+    p  { font-size:1.1rem; margin:8px 0 10px; text-align:center; }
+
+    /* 테마 색상 변수 */
+    :root {
+      --bg:#fff0f5; --text:#274046; --link:#2575fc; --accent:#18854b;
+      --chip: rgba(255,255,255,0.65);
+      --shadow: 0 10px 30px rgba(0,0,0,0.08);
+      --g1:#fff0f5; --g2:#e6ffe6;
+    }
+    body.fall {
+      --bg:#fff3e0; --text:#3d2c2e; --link:#8a4b2e; --accent:#c5602a;
+      --g1:#ffe8d6; --g2:#ffd7ba;
+    }
+
+    /* 배경 */
+    html,body{height:100%}
+    body{
+      margin:0; color:var(--text);
+      font-family: ui-sans-serif, -apple-system, Segoe UI, Roboto, "Noto Sans KR", Arial, sans-serif;
+      background:
+        radial-gradient(1200px 800px at 10% -10%, var(--g1), transparent 60%),
+        radial-gradient(1000px 700px at 110% 20%, var(--g2), transparent 60%),
+        var(--bg);
+      transition: background 400ms ease, color 250ms ease;
+    }
+
+    /* 링크 */
+    a { color:var(--link); text-decoration:none; transition:opacity .15s, transform .15s; }
+    a:hover { opacity:.9; transform:translateY(-1px); }
+
+            /* 상단 타이틀 */
+    h1 {
+      margin: 24px 0 8px;
+      text-align: center;
+      letter-spacing: -0.5px;
+    }
+    h1 a {
+      text-decoration: none;
+      color: var(--text);
+      padding: 8px 14px;
+      border-radius: 14px;
+      background: var(--bg-accent);
+      backdrop-filter: blur(6px);
+      box-shadow: var(--shadow);
+      transition: transform 150ms ease;
+      display: inline-block;
+    }
+    h1 a:hover { transform: translateY(-1px); }
+
+    /* 추천 코스 강조 */
+    .추천코스 {
+      font-weight:800; color:var(--accent);
+    }
+
+    /* 버튼 */
+    input[type="button"]{
+      appearance:none; border:0; cursor:pointer;
+      padding: 12px 18px; margin: 10px auto; display:inline-block;
+      font-size:1rem; font-weight:700; color:var(--text);
+      background: var(--chip); border-radius:999px;
+      box-shadow: var(--shadow);
+      transition: transform .12s ease, box-shadow .2s ease;
+    }
+    input[type="button"]:hover{ transform:translateY(-1px); }
+
+    /* 이미지 */
+    img{ display:block; margin:14px auto; border-radius:16px; box-shadow:var(--shadow); max-width:90%; height:auto }
+
+    /* 리스트 */
+    ol{ list-style:none; padding:0; margin: 10px auto 12px; max-width:680px;
+        display:grid; grid-template-columns: repeat(auto-fit, minmax(180px,1fr)); gap:12px; }
+    ol li a{ display:block; text-align:center; padding:14px 16px; font-weight:800;
+             background: var(--chip); border-radius:16px; box-shadow:var(--shadow); }
+
+    ul{ list-style:none; padding:0; margin: 8px auto; text-align:center; }
+  
+  </style>
+</head>
+
+<body class="spring">
+  <h1><a href="index.html">Level Up Rides 🚴🏻</a></h1>
+
+  <p>
+  <span class="추천코스">추천 코스</span> </p>
+<div style="display:flex; justify-content:center; gap:6px;">
+  <img src="IMG_8390 2.jpg" 
+       style="width:400px; height:350px; object-fit:cover; margin:0;">
+  <img src="IMG_8393.jpg" 
+       style="width:400px; height:350px; object-fit:cover; margin:0;">
+</div>
+</div>
+  </p>
+
+  <h2>🌱 Beginner - 남한강 자전거길</h2>
+  <p>남한강 자전거길 
+    <input type="button" value="라이딩 Kick" onclick="alert('🌭 두물머리 핫도그 먹기')">
+  </p>
+  <p>팔당역에서 시작하여 아름다운 기찻길과 남한강의 풍경을 따라 자전거를 탈 수 있어요!</p>
+  <ul>
+    <li>난이도 : 🚴‍♂️ 평지 위주의 부담없는 코스</li>
+  </ul>
+</body>
+</html>
